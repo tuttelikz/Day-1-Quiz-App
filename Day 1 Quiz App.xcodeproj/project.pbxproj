@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51E9D27D1B2A959F00F1A36C /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E9D27C1B2A959F00F1A36C /* Question.m */; };
 		51EB93591B269BA100C7D297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EB93581B269BA100C7D297 /* main.m */; };
 		51EB935C1B269BA100C7D297 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EB935B1B269BA100C7D297 /* AppDelegate.m */; };
 		51EB935F1B269BA100C7D297 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EB935E1B269BA100C7D297 /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51E9D2761B2A949E00F1A36C /* Day 1 Quiz App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day 1 Quiz App-Bridging-Header.h"; sourceTree = "<group>"; };
+		51E9D27B1B2A959F00F1A36C /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = ../Question.h; sourceTree = "<group>"; };
+		51E9D27C1B2A959F00F1A36C /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = ../Question.m; sourceTree = "<group>"; };
 		51EB93531B269BA100C7D297 /* Day 1 Quiz App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 1 Quiz App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EB93571B269BA100C7D297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51EB93581B269BA100C7D297 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		51EB93551B269BA100C7D297 /* Day 1 Quiz App */ = {
 			isa = PBXGroup;
 			children = (
+				51E9D27B1B2A959F00F1A36C /* Question.h */,
+				51E9D27C1B2A959F00F1A36C /* Question.m */,
 				51EB935A1B269BA100C7D297 /* AppDelegate.h */,
 				51EB935B1B269BA100C7D297 /* AppDelegate.m */,
 				51EB935D1B269BA100C7D297 /* ViewController.h */,
@@ -89,6 +95,7 @@
 				51EB93631B269BA100C7D297 /* Images.xcassets */,
 				51EB93651B269BA100C7D297 /* LaunchScreen.xib */,
 				51EB93561B269BA100C7D297 /* Supporting Files */,
+				51E9D2761B2A949E00F1A36C /* Day 1 Quiz App-Bridging-Header.h */,
 			);
 			path = "Day 1 Quiz App";
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EB935F1B269BA100C7D297 /* ViewController.m in Sources */,
+				51E9D27D1B2A959F00F1A36C /* Question.m in Sources */,
 				51EB935C1B269BA100C7D297 /* AppDelegate.m in Sources */,
 				51EB93591B269BA100C7D297 /* main.m in Sources */,
 			);
@@ -349,9 +357,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Day 1 Quiz App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Day 1 Quiz App/Day 1 Quiz App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,9 +370,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Day 1 Quiz App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Day 1 Quiz App/Day 1 Quiz App-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -418,6 +431,7 @@
 				51EB93781B269BA100C7D297 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51EB93791B269BA100C7D297 /* Build configuration list for PBXNativeTarget "Day 1 Quiz AppTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +440,7 @@
 				51EB937B1B269BA100C7D297 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
